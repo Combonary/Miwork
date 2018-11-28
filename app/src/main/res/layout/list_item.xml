@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/list_item_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="16dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        tools:contentDescription="number of items"/>
+
+    <TextView
+        android:id="@+id/eng_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/list_item_icon"
+        android:layout_toRightOf="@id/list_item_icon"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="43dp"
+        tools:text="one"/>
+
+    <TextView
+        android:id="@+id/mi_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/list_item_icon"
+        android:layout_toRightOf="@id/list_item_icon"
+        android:layout_below="@id/eng_textView"
+        tools:text="Lutti"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"/>
+
+</RelativeLayout>
